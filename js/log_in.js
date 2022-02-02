@@ -19,7 +19,8 @@ createApp({
         // expires 設置有效時間
         document.cookie = `hexToken=${token};expires=${new Date(expired)}; path=/`;
         //登入成功後跳轉到商品頁
-        window.location = 'products.html';
+        //window.location = 'products.html';
+        window.location = 'productList.html';
       }).catch((error) => {
         alert(error.data.message);
       });
